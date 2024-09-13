@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tra cứu dữ liệu sao kê</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌊</text></svg>"></link>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/plug-ins/2.1.6/features/searchHighlight/dataTables.searchHighlight.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>
+        <center>Tra cứu dữ liệu sao kê CT1111</center>
+      </h1>
+      <div id="summary"></div>
+
+      <h3>Bảng thống kê</h3>
+      <table
+        id="tblResult"
+        class="table table-striped"
+        cellspacing="0"
+        width="100%"
+      >
+        <thead>
+          <tr>
+            <th>Ngày giao dịch</th>
+            <th>Mã giao dịch</th>
+            <th>Số tiền</th>
+            <th>Chi tiết giao dịch</th>
+            <th>Vị trí trang PDF</th>
+          </tr>
+        </thead>
+      </table>
+
+      <div id="loading">Đang tải dữ liệu...</div>
+
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.datatables.net/2.1.6/js/dataTables.min.js"></script>
+      <script src="https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+      <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+      <script src="https://cdn.datatables.net/plug-ins/2.1.6/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+      <script src="./index.js"></script>
+    </main>
+  </body>
+</html>
